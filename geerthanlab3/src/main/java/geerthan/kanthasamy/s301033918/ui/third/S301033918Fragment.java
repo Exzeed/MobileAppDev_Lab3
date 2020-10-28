@@ -1,4 +1,10 @@
-package geerthan.kanthasamy.s301033918.ui.home;
+/*
+ * Full Name: Geerthan Kanthasamy
+ * Student ID: 301033918
+ * Section Number: 002
+ */
+
+package geerthan.kanthasamy.s301033918.ui.third;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,17 +20,17 @@ import androidx.lifecycle.ViewModelProviders;
 
 import geerthan.kanthasamy.s301033918.R;
 
-public class HomeFragment extends Fragment {
+public class S301033918Fragment extends Fragment {
 
-    private HomeViewModel homeViewModel;
+    private S301033918ViewModel s301033918ViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        homeViewModel =
-                ViewModelProviders.of(this).get(HomeViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_home, container, false);
-        final TextView textView = root.findViewById(R.id.text_home);
-        homeViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        s301033918ViewModel =
+                ViewModelProviders.of(this).get(S301033918ViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_third, container, false);
+        final TextView textView = root.findViewById(R.id.text_notifications);
+        s301033918ViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);

@@ -1,6 +1,12 @@
+<!--
+Full Name: Geerthan Kanthasamy
+Student ID: 301033918
+Section Number: 002
+-->
+
 <resources>
     <string name="app_name">GeerthanLab3</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_first">1st Fragment</string>
+    <string name="title_second">2nd Fragment</string>
+    <string name="title_third">3rd Fragment</string>
 </resources>

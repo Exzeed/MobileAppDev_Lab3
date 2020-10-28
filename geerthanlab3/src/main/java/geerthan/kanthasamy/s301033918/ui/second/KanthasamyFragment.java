@@ -1,4 +1,10 @@
-package geerthan.kanthasamy.s301033918.ui.dashboard;
+/*
+* Full Name: Geerthan Kanthasamy
+* Student ID: 301033918
+* Section Number: 002
+*/
+
+package geerthan.kanthasamy.s301033918.ui.second;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,17 +20,17 @@ import androidx.lifecycle.ViewModelProviders;
 
 import geerthan.kanthasamy.s301033918.R;
 
-public class DashboardFragment extends Fragment {
+public class KanthasamyFragment extends Fragment {
 
-    private DashboardViewModel dashboardViewModel;
+    private KanthasamyViewModel kanthasamyViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        dashboardViewModel =
-                ViewModelProviders.of(this).get(DashboardViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_dashboard, container, false);
+        kanthasamyViewModel =
+                ViewModelProviders.of(this).get(KanthasamyViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_second, container, false);
         final TextView textView = root.findViewById(R.id.text_dashboard);
-        dashboardViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        kanthasamyViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);
