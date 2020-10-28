@@ -15,11 +15,14 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 
-public class geerthanActivity extends AppCompatActivity {
-
+public class geerthanActivity extends AppCompatActivity
+{
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         BottomNavigationView navView = findViewById(R.id.nav_view);
@@ -33,4 +36,34 @@ public class geerthanActivity extends AppCompatActivity {
         NavigationUI.setupWithNavController(navView, navController);
     }
 
+    @Override
+    public void onBackPressed()
+    {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setCancelable(false);
+        builder.setIcon(R.mipmap.ic_launcher_round);
+        builder.setTitle("Alert");
+        builder.setMessage("Do you want to stay on the app or exit?");
+
+        builder.setPositiveButton("Exit", new DialogInterface.OnClickListener()
+        {
+            @Override
+            public void onClick(DialogInterface dialog, int which)
+            {
+                finish();
+            }
+        });
+
+        builder.setNegativeButton("Stay",new DialogInterface.OnClickListener()
+        {
+            @Override
+            public void onClick(DialogInterface dialog, int which)
+            {
+                dialog.cancel();
+            }
+        });
+
+        AlertDialog alert=builder.create();
+        alert.show();
+    }
 }
