@@ -9,4 +9,10 @@ Section Number: 002
     <string name="title_first">1st Fragment</string>
     <string name="title_second">2nd Fragment</string>
     <string name="title_third">3rd Fragment</string>
+    <string name="topCentered">Name: Geerthan ID: 301033918</string>
+    <string name="canvasClear">Clear</string>
+    <string name="blackColour">Colour: Black</string>
+    <string name="redColour">Colour: Red</string>
+    <string name="blueColour">Colour: Blue</string>
+    <string name="updatePaint">Update</string>
 </resources>

@@ -37,10 +37,10 @@ public class geerthanActivity extends AppCompatActivity
     }
 
     @Override
-    public void onBackPressed()
+    public void onBackPressed() //when back key is pressed
     {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setCancelable(false);
+        AlertDialog.Builder builder = new AlertDialog.Builder(this); //create alert dialogue
+        builder.setCancelable(false); //cannot be exited without choosing an option
         builder.setIcon(R.mipmap.ic_launcher_round);
         builder.setTitle("Alert");
         builder.setMessage("Do you want to stay on the app or exit?");
