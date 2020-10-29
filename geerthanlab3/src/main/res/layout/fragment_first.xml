@@ -21,21 +21,18 @@
             android:id="@+id/geerthanBlackRB"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="onRadioButtonClicked"
             android:text="@string/blackColour" />
 
         <RadioButton
             android:id="@+id/geerthanRedRB"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="onRadioButtonClicked"
             android:text="@string/redColour" />
 
         <RadioButton
             android:id="@+id/geerthanBlueRB"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="onRadioButtonClicked"
             android:text="@string/blueColour" />
     </RadioGroup>
 
@@ -111,6 +108,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:text="@string/topCentered"
+        android:textColor="#F10505"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

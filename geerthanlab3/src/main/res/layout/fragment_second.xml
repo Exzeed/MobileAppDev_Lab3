@@ -7,17 +7,79 @@
     android:background="@color/colorPrimary"
     tools:context=".ui.second.KanthasamyFragment">
 
-    <TextView
-        android:id="@+id/text_dashboard"
-        android:layout_width="match_parent"
+    <RadioGroup
+        android:id="@+id/geerthanSpeedRG"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
+        android:layout_marginStart="150dp"
+        android:layout_marginBottom="100dp"
+        android:checkedButton="@id/geerthanNormalRB"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RadioButton
+            android:id="@+id/geerthanSlowRB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/speedSlow" />
+
+        <RadioButton
+            android:id="@+id/geerthanNormalRB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/speedNormal" />
+
+        <RadioButton
+            android:id="@+id/geerthanFastRB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/speedFast" />
+
+        <RadioButton
+            android:id="@+id/geerthanTurboRB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/speedTurbo" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/geerthanStopBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/animStop"
+        app:layout_constraintStart_toEndOf="@+id/geerthanStartBtn"
+        app:layout_constraintTop_toTopOf="@id/geerthanRuntimeBtn" />
+
+    <Button
+        android:id="@+id/geerthanStartBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/animStart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/geerthanRuntimeBtn" />
+
+    <Button
+        android:id="@+id/geerthanRuntimeBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/runtimeService"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/geerthanAnimIV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/geerthanRuntimeBtn"></ImageView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

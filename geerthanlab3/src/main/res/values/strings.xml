@@ -15,4 +15,11 @@ Section Number: 002
     <string name="redColour">Colour: Red</string>
     <string name="blueColour">Colour: Blue</string>
     <string name="updatePaint">Update</string>
+    <string name="runtimeService">Runtime Service</string>
+    <string name="animStart">Start</string>
+    <string name="animStop">Stop</string>
+    <string name="speedSlow">Slow</string>
+    <string name="speedNormal">Normal</string>
+    <string name="speedFast">Fast</string>
+    <string name="speedTurbo">Turbo</string>
 </resources>
