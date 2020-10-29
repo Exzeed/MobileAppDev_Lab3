@@ -1,0 +1,25 @@
+<!--
+Full Name: Geerthan Kanthasamy
+Student ID: 301033918
+Section Number: 002
+-->
+
+<resources>
+    <string name="app_name">GeerthanLab3</string>
+    <string name="title_first">Premier Fragment</string>
+    <string name="title_second">Deuxieme Fragment</string>
+    <string name="title_third">Troisieme Fragment</string>
+    <string name="topCentered">Nom: Geerthan ID: 301033918</string>
+    <string name="canvasClear">Claire</string>
+    <string name="blackColour">Couleur: Black</string>
+    <string name="redColour">Couleur: Red</string>
+    <string name="blueColour">Couleur: Blue</string>
+    <string name="updatePaint">Reviser</string>
+    <string name="runtimeService">Service d\'\Execution</string>
+    <string name="animStart">Debut</string>
+    <string name="animStop">Arret</string>
+    <string name="speedSlow">Lent</string>
+    <string name="speedNormal">Ordinaire</string>
+    <string name="speedFast">Vite</string>
+    <string name="speedTurbo">Turbo</string>
+</resources>

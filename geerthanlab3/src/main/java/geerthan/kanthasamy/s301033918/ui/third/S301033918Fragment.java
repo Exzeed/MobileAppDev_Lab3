@@ -10,6 +10,8 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -29,13 +31,12 @@ public class S301033918Fragment extends Fragment {
         s301033918ViewModel =
                 ViewModelProviders.of(this).get(S301033918ViewModel.class);
         View root = inflater.inflate(R.layout.fragment_third, container, false);
-        final TextView textView = root.findViewById(R.id.text_notifications);
-        s301033918ViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
+
+        TextView firstName = (TextView) root.findViewById(R.id.geerthanFirstTV);
+        Animation anim =  AnimationUtils.loadAnimation(getActivity(), R.anim.spin);
+        firstName.startAnimation(anim);
+
+
         return root;
     }
 }
